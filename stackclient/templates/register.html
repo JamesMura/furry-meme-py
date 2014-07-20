@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+{% load bootstrap_tags %}
+<div>
+    <form action="{% url 'register' %}" method="post" class="form-horizontal col-md-12">
+        {% csrf_token %}
+        <legend>Register</legend>
+        {{ form|as_bootstrap }}
+        <div class="form-actions">
+            <a href="{% url 'home'%} " class="btn">Go back</a>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
