@@ -1,6 +1,7 @@
 Django==1.6.5
 South==1.0
 django-bower==5.0.1
+django-forms-bootstrap==3.0.0
 mock==1.0.1
 requests==2.3.0
 responses==0.2.2
